@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <th:block th:replace="fragment/head :: head"></th:block>
+</head>
+
+<style>
+    .div_box {
+        position: relative;
+        left: 350px;
+        top: 30px;
+        margin-right: 400px;
+    }
+
+</style>
+
+<body>
+<th:block th:replace="fragment/body :: bodyHeader"></th:block>
+
+<div class="div_box">
+    <div>
+        <h3 th:text="${days}"></h3>
+    </div>
+    <div class="flourish-embed flourish-chart" data-src="visualisation/4642138">
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+    </div>
+</div>
+</body>
+</html>

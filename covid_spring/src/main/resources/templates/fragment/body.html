@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<div class="header" th:fragment="bodyHeader">
+    <div class="nav-side-menu">
+        <div class="brand">Security</div>
+        <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+        <div class="menu-list">
+
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                    <a href="/">
+                        <i class="fa fa-dashboard fa-lg"></i> 세계 코로나 현황
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/seoul">
+                        <i class="fa fa-dashboard fa-lg"></i> 일일 서울 확진자 수
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/where">
+                        <i class="fa fa-dashboard fa-lg"></i> 서울 감염 경로
+                    </a>
+                </li>
+
+
+
+            </ul>
+
+        </div>
+    </div>
+</div>
